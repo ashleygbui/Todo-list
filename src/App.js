@@ -6,9 +6,9 @@ import FormTodo from "./FormTodo";
 import Todo from "./Todo";
 
 function App() {
-  const [todos,setTodos] = React.useState([
+  const [todos,setTodos] = React.useState([ //hook
     {
-      text: "Sample ToDo",
+      text: "This is a Sample Todo",
       isDone: false
     }
   ])
@@ -31,30 +31,29 @@ function App() {
   }
 
   return(
-    <div className = "App">
-      <div className="container">
-        <h1 className="text-center"> 
-          Todo List
-        </h1>
-        <FormTodo addTodo = {addTodo}/>
-        <div>
-          {todos.map((todo,index) => (
-            <Card>
-              <Card.Body>
-                <Todo
-                key={index}
-                index={index}
-                todo={todo}
-                markTodo={markTodo}
-                removeTodo={removeTodo}
-                />
-              </Card.Body>
-            </Card>
-          ))}
+    <div className="Background">
+      <div className = "App">
+        <div className="container">
+          <h1 className="text-center"> My Todo List</h1>
+          <FormTodo addTodo = {addTodo}/>
+          <div>
+            {todos.map((todo,index) => (
+              <Card>
+                <Card.Body>
+                  <Todo
+                  key={index}
+                  index={index}
+                  todo={todo}
+                  markTodo={markTodo}
+                  removeTodo={removeTodo}
+                  />
+                </Card.Body>
+              </Card>
+            ))}
+          </div>
         </div>
-
       </div>
-
+      
     </div>
   );
 }

@@ -1,6 +1,15 @@
-.app {
-  padding: 30px;
-  background-color: floralwhite;
+.Background{
+  background-color: lightpink;
+  height: 100vh;
+
+}
+.App {
+  padding: 50px;
+  background-color: lightpink;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  
 }
 
 .todo {
@@ -8,6 +17,11 @@
   display: flex;
   font-size: 18px;
   justify-content: space-between;
+
 }
 
+.text-center{
+  border-radius: 5px;
+  font-style: oblique;
+}
 
