@@ -31,7 +31,7 @@ function App() {
   }
 
   return(
-    <div className="Background">
+    <>
       <div className = "App">
         <div className="container">
           <h1 className="text-center"> My Todo List</h1>
@@ -54,7 +54,7 @@ function App() {
         </div>
       </div>
       
-    </div>
+    </>
   );
 }
 

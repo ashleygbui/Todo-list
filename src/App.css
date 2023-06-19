@@ -1,14 +1,12 @@
-.Background{
-  background-color: lightpink;
-  height: 100vh;
-
+Body{
+  background-image:url(./Images/wallpaper_egg3.jpg) ;
 }
+
 .App {
-  padding: 50px;
-  background-color: lightpink;
+  padding: 20px;
   margin-left: auto;
   margin-right: auto;
-  width: 100%;
+  width: 70%;
   
 }
 
@@ -23,5 +21,6 @@
 .text-center{
   border-radius: 5px;
   font-style: oblique;
+  background-color:white;
 }
 
